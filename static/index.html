@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinAnalyse — analyse boursière et financière</title>
+  <meta name="description" content="Analyse d'actions : cours, analyse technique, ratios financiers, scores, risque, DCF et calculatrices de finance.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%231a73e8'/><path d='M6 22l6-7 5 4 9-11' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="logo" aria-hidden="true"></span>FinAnalyse</a>
+    <div class="search">
+      <input id="search" type="search" placeholder="Rechercher une action, un ETF, un indice (ex. Apple, MC.PA, ^FCHI)…" autocomplete="off" aria-label="Rechercher">
+      <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+    <nav class="nav">
+      <a href="#/">Marchés</a>
+      <a href="#/compare">Comparer</a>
+      <a href="#/calculators">Calculatrices</a>
+      <button id="theme-toggle" class="icon-btn" title="Changer de thème" aria-label="Changer de thème">◐</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer container">
+    Données : Yahoo Finance via yfinance (cours différés possibles). Les calculs sont fournis à titre informatif et ne constituent pas un conseil en investissement.
+    Graphiques : <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView Lightweight Charts™</a> et Chart.js.
+  </footer>
+
+  <script src="/static/vendor/lightweight-charts.standalone.production.js"></script>
+  <script src="/static/vendor/chart.umd.js"></script>
+  <script src="/static/js/formulas.js"></script>
+  <script src="/static/js/format.js"></script>
+  <script src="/static/js/calculators.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
